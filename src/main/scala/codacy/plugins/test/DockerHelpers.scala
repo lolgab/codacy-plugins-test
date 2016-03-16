@@ -12,7 +12,7 @@ import scala.util.Try
 
 object DockerHelpers {
 
-  val dockerRunCmd = List("docker", "run", "--net=none", "--privileged=false", "--user=docker")
+  val dockerRunCmd = List("docker", "run", "--user=docker")
 
   def toPatterns(toolSpec: Tool.Specification): Seq[Pattern] = toolSpec.patterns.map { case patternSpec =>
     val parameters = patternSpec.parameters.map(_.map { param =>

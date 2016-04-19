@@ -8,6 +8,8 @@ import codacy.utils.Printer
 import org.apache.commons.io.FileUtils
 import plugins.DockerImageName
 
+import scala.util.Try
+
 case class Sources(mainSourcePath: Path, directoryPaths: Seq[Path])
 
 object DockerTest {

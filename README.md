@@ -101,6 +101,12 @@ If you need to debug the output of the dockers after the tests you can request t
 
 * `codacy.tests.noremove` - do not remove dockers after running test
 
+## Dockers that need to use the internet
+
+Some of the tools may need to access the internet to pull external dependencies in run-time (for tools that compile code this is usually a must have).
+
+The version of this test interface that is available in the `master` branch does not allow this. To run `codacy-plugins-test` for this scenario use the version of the code available in the `compilation` branch.
+
 ## Docs
 
 [Tool Developer Guide](http://docs.codacy.com/v1.5/docs/tool-developer-guide)

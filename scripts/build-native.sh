@@ -94,7 +94,7 @@ function build_cmd() {
     FLAGS="$FLAGS --static"
   fi
 
-  echo 'native-image -J-Xmx8G -cp '"${APP_CLASSPATH}"' '"${FLAGS}"' -H:Name='"${BINARY_NAME}"' -H:Class='"${APP_MAIN_CLASS}"' --allow-incomplete-classpath'
+  echo 'native-image -J-Xmx16G -cp '"${APP_CLASSPATH}"' '"${FLAGS}"' -H:Name='"${BINARY_NAME}"' -H:Class='"${APP_MAIN_CLASS}"' --allow-incomplete-classpath'
 }
 
 echo "Publishing ${APP_NAME} binary version ${VERSION} for ${OS_TARGET}"
